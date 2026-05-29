@@ -62,8 +62,8 @@ Every shape is a plain object:
 { id, type, x, y, width, height, fill, rotation }
 ```
 
-- `x, y` — top-left of the shape's unrotated bounding box
-- `rotation` — degrees, applied about the box center
+- `x, y` - top-left of the shape's unrotated bounding box
+- `rotation` - degrees, applied about the box center
 
 Reducer actions: `ADD_SHAPE`, `SELECT_SHAPE`, `UPDATE_SHAPE`, `DELETE_SHAPE`.
 
