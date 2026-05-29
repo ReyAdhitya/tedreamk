@@ -9,6 +9,8 @@ pointer interactions go through a small reusable `useDrag` hook.
 
 ## Demo
 
+**Live:** https://tedreamk.vercel.app
+
 > Record a GIF and add it here before final submission.
 
 ## Getting started
