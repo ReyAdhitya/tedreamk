@@ -53,8 +53,8 @@ agent (Claude Code). The AI:
 blindly: the build (`npm run build`) and linter (`npm run lint`) were run and
 made to pass, the dev server was started to confirm it boots, and each operation
 (add, select, move, resize at multiple rotations, recolor, rotate, delete) was
-exercised against the stated requirements. Issues surfaced during verification —
-notably an ESLint `react-hooks/refs` rule rejecting ref writes during render —
+exercised against the stated requirements. Issues surfaced during verification -
+notably an ESLint `react-hooks/refs` rule rejecting ref writes during render -
 were fixed (refs are now synced inside effects). Limitations that remained are
 documented honestly rather than hidden.
 
