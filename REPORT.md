@@ -4,13 +4,13 @@
 
 Build a browser-based graphic editor in React where a user can add primitive
 shapes to a canvas and manipulate them directly. The editor must support three
-shape types — Rectangle, Circle, and Triangle — and four direct-manipulation
+shape types - Rectangle, Circle, and Triangle - and four direct-manipulation
 operations on each:
 
-- **Move** — drag the shape body
-- **Resize** — drag corner handles
-- **Recolor** — choose a fill via a color input
-- **Rotate** — drag a rotation handle positioned above the shape
+- **Move** - drag the shape body
+- **Resize** - drag corner handles
+- **Recolor** - choose a fill via a color input
+- **Rotate** - drag a rotation handle positioned above the shape
 
 Constraints: keep the scope minimal and completable. No undo/redo, no layers,
 no text. State is modeled as a flat list of shape objects
@@ -26,7 +26,7 @@ The application is rendered as a single SVG canvas. Each shape is one SVG elemen
 its center. A selected shape gets an overlay (`SelectionHandles`) drawing a
 dashed bounding box, four corner resize handles, and a rotation handle.
 
-State management uses a single `useReducer` store (`useEditor`) — deliberately
+State management uses a single `useReducer` store (`useEditor`) - deliberately
 chosen over Redux or context-heavy patterns given the small scope. All pointer
 interactions (move, resize, rotate) share one reusable `useDrag` hook that
 reports a cumulative delta from the press point. Because the SVG is rendered 1:1
@@ -76,7 +76,7 @@ documented honestly rather than hidden.
 - **Move.** Dragging any shape body translates it smoothly; the starting
   position is snapshotted on press so the motion tracks the cursor exactly.
 - **Resize.** Corner-handle resizing works for all three shapes and remains
-  correct under rotation — the opposite corner stays anchored thanks to the
+  correct under rotation - the opposite corner stays anchored thanks to the
   local-frame diagonal computation.
 - **Recolor.** The color input updates `fill` live via `UPDATE_SHAPE`.
 - **Rotate.** Both the rotation handle (drag) and the panel slider update the
