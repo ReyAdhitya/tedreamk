@@ -94,5 +94,5 @@ src/
 - **Backspace deletes.** `Backspace` removes the selected shape (ignored while
   typing in an input). This may surprise users expecting it to do nothing.
 - **No persistence.** State is in-memory only; a refresh clears the canvas.
-- **No undo/redo, layers, z-order controls, or text** — out of scope by design.
+- **No undo/redo, layers, z-order controls, or text** - out of scope by design.
 - **Touch/pen** works via pointer events but is untested across devices.
