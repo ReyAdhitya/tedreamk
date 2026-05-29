@@ -9,14 +9,13 @@ pointer interactions go through a small reusable `useDrag` hook.
 
 ## Demo
 
-<!-- TODO: replace with a recorded demo -->
-![Demo](docs/demo.gif)
+> Record a GIF and add it here before final submission.
 
 ## Getting started
 
 ```bash
 # Clone
-git clone <your-repo-url>
+git clone https://github.com/ReyAdhitya/tedreamk
 cd tedreamk
 
 # Install
